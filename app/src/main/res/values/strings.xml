@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">persistence</string>
+    <string name="albums">Альбомы</string>
+    <string name="happen_error_try_again">Произошла ошибка, попробуйте снова</string>
+    <string name="about_post">О посте</string>
+</resources>

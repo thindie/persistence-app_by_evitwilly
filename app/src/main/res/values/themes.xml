@@ -1,0 +1,3 @@
+<resources>
+    <style name="Theme.Persistence" parent="Theme.AppCompat.Light.NoActionBar" />
+</resources>
