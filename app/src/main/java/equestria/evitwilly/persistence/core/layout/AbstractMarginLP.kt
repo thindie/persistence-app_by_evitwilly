@@ -2,7 +2,7 @@ package equestria.evitwilly.persistence.core.layout
 
 import android.view.ViewGroup
 
-abstract class AbstractMarginLP<T : ViewGroup.MarginLayoutParams, R>(private val params: T, private val match: Int, private val wrap: Int) : AbstractLP<T, R>(params, match, wrap) {
+abstract class AbstractMarginLP<T : ViewGroup.MarginLayoutParams, R>(private val params: T, match: Int, wrap: Int) : AbstractLP<T, R>(params, match, wrap) {
 
     fun marginTop(dp: Int) = with(params.apply { topMargin = dp })
     fun marginStart(dp: Int) = with(params.apply { marginStart = dp })

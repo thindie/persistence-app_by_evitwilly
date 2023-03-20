@@ -48,8 +48,7 @@ abstract class TitleScreen: ScreenView() {
         toolbarTitleView.fontSize(18f)
         toolbarTitleView.setTextColor(CoreColors.black)
         val margin = if (isBackButtonVisible) context.dp(40) else context.dp(16)
-        toolbarTitleView.layoutParams(
-            frameLayoutParams().wrap().gravity(Gravity.CENTER)
+        toolbarTitleView.layoutParams(frameLayoutParams().wrap().gravity(Gravity.CENTER)
             .marginStart(margin).marginEnd(margin))
         toolbarView.addView(toolbarTitleView)
 
