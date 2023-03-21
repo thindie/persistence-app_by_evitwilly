@@ -38,7 +38,17 @@ class PostListScreen: TitleScreen() {
     }
 
     override fun content(context: Context, bundle: Bundle?): View {
-        changeTitle(context.getString(R.string.albums))
+
+        changeTitle(context.getString(R.string.posts))
+
+        val themeManager = (context.applicationContext as App).themeManager
+
+        changeMenuButtonIsVisible(true)
+        changeMenuButtonImageResource(themeManager.menu_button_icon_drawable_resource)
+        changeMenuButtonClickListener {
+            themeManager.toggleTheme()
+            changeMenuButtonImageResource(themeManager.menu_button_icon_drawable_resource)
+        }
 
         val rootView = FrameLayout(context)
 

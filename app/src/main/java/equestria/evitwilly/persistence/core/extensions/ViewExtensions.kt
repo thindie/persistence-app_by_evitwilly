@@ -2,7 +2,7 @@ package equestria.evitwilly.persistence.core.extensions
 
 import android.content.Context
 import android.view.View
-import equestria.evitwilly.persistence.core.layout.LP
+import equestria.evitwilly.persistence.core.layout.AbstractLP
 import kotlin.math.roundToInt
 
 fun Context.dp(dimen: Int) = (resources.displayMetrics.density * dimen).roundToInt()
@@ -21,6 +21,6 @@ fun View.padding(all: Int) {
     padding(all, all, all, all)
 }
 
-fun View.layoutParams(params: LP<*>) {
+fun View.layoutParams(params: AbstractLP<*, *>) {
     layoutParams = params.build()
 }

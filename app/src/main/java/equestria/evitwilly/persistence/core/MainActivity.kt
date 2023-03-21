@@ -2,10 +2,12 @@ package equestria.evitwilly.persistence.core
 
 import android.os.Build
 import android.os.Bundle
+import android.view.WindowManager
 import android.widget.FrameLayout
 import android.window.OnBackInvokedDispatcher
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
+import equestria.evitwilly.persistence.core.colors.CoreColors
 import equestria.evitwilly.persistence.posts.list.PostListScreen
 import equestria.evitwilly.persistence.core.navigator.ScreenViewNavigator
 
@@ -15,6 +17,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        val window = this.window
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+        window.statusBarColor = CoreColors.greenMedium
 
         val container = FrameLayout(this)
         setContentView(container)

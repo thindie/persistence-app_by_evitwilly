@@ -4,11 +4,15 @@ import android.app.Application
 import equestria.evitwilly.persistence.core.internet.BackgroundRunner
 import equestria.evitwilly.persistence.core.internet.UiRunner
 import equestria.evitwilly.persistence.core.cache.KeyedMemoryTypedCache
+import equestria.evitwilly.persistence.core.cache.PersistenceSimpleDataStorage
 import equestria.evitwilly.persistence.core.internet.RestApiRequester
 import equestria.evitwilly.persistence.core.navigator.ScreenView
+import equestria.evitwilly.persistence.core.theme.CoreThemeManager
 import equestria.evitwilly.persistence.core.viewmodel.PersistenceViewModel
 
 class App: Application() {
+
+    val themeManager by lazy { CoreThemeManager(PersistenceSimpleDataStorage(this)) }
 
     val screenMemoryTypedCache = KeyedMemoryTypedCache<List<ScreenView>>()
     val viewModelMemoryTypedCache = KeyedMemoryTypedCache<PersistenceViewModel>()

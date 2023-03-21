@@ -9,4 +9,5 @@ object CoreColors {
 
     val white = Color.rgb(255, 255, 255)
     val black = Color.rgb(0, 0, 0)
+    val gray = Color.rgb(66, 66, 66)
 }
