@@ -11,7 +11,12 @@ enum class CoreTheme(
     val toolbarButtonRippleColor: Int,
     val toolbarButtonIconTint: Int,
     val toolbarButtonIconSize: Int,
-    val toolbarButtonIconPadding: Int
+    val toolbarButtonIconPadding: Int,
+    val buttonRippleColor: Int,
+    val buttonBackgroundColor: Int,
+    val buttonBorderRadius: Float,
+    val buttonTextColor: Int,
+    val progressTintColor: Int
 ) {
 
     LIGHT(
@@ -23,7 +28,12 @@ enum class CoreTheme(
         toolbarButtonRippleColor = CoreColors.greenDark,
         toolbarButtonIconTint = CoreColors.black,
         toolbarButtonIconSize = 24,
-        toolbarButtonIconPadding = 8
+        toolbarButtonIconPadding = 8,
+        buttonRippleColor = CoreColors.greenDark,
+        buttonBackgroundColor = CoreColors.greenMedium,
+        buttonBorderRadius = 12f,
+        buttonTextColor = CoreColors.white,
+        progressTintColor = CoreColors.greenMedium
     ),
 
     DARK(
@@ -35,7 +45,12 @@ enum class CoreTheme(
         toolbarButtonRippleColor = CoreColors.greenDark,
         toolbarButtonIconTint = CoreColors.white,
         toolbarButtonIconSize = 24,
-        toolbarButtonIconPadding = 8
+        toolbarButtonIconPadding = 8,
+        buttonRippleColor = CoreColors.greenDark,
+        buttonBackgroundColor = CoreColors.greenMedium,
+        buttonBorderRadius = 12f,
+        buttonTextColor = CoreColors.white,
+        progressTintColor = CoreColors.greenDark
     )
 
 }

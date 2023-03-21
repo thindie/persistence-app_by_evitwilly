@@ -4,11 +4,10 @@ import android.content.Context
 import android.os.Bundle
 import android.view.View
 import android.widget.LinearLayout
-import android.widget.TextView
-import equestria.evitwilly.persistence.R
 import equestria.evitwilly.persistence.core.TitleScreen
 import equestria.evitwilly.persistence.core.colors.CoreColors
 import equestria.evitwilly.persistence.core.extensions.*
+import equestria.evitwilly.persistence.core.theme.components.CoreLinearLayout
 import equestria.evitwilly.persistence.core.theme.components.CoreTextView
 import equestria.evitwilly.persistence.posts.models.PostModel
 
@@ -16,7 +15,7 @@ class PostDetailScreen(private val model: PostModel): TitleScreen() {
 
     override fun content(context: Context, bundle: Bundle?): View {
 
-        val rootView = LinearLayout(context)
+        val rootView = CoreLinearLayout(context)
         rootView.orientation = LinearLayout.VERTICAL
         rootView.padding(context.dp(16))
 

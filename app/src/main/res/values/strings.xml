@@ -2,4 +2,5 @@
     <string name="app_name">persistence</string>
     <string name="posts">Posts</string>
     <string name="happen_error_try_again">An error has occurred, please try again</string>
+    <string name="retry">Retry</string>
 </resources>
